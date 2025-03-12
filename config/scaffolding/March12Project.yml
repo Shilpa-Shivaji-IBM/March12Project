@@ -8,10 +8,11 @@ packages:
   gitUsername: Shilpa-Shivaji-IBM
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+- serviceName: project.march12.integrations:flow1
   packages:
   - name: March12Project
     version: "1.0"
