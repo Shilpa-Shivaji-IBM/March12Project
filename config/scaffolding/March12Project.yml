@@ -12,7 +12,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+- serviceName: project.march12.integrations:selectServiceFlow
   packages:
   - name: March12Project
     version: "1.0"
@@ -20,15 +20,7 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
-  packages:
-  - name: March12Project
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-- serviceName: project.march12.integrations:flow1
+- serviceName: project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:testss
   packages:
   - name: March12Project
     version: "1.0"
@@ -90,7 +82,7 @@ configurationVariables:
   ? artConnection.March12Project.project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
   : ""
   ? artConnection.March12Project.project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.March12Project.project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.March12Project.project.march12.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
